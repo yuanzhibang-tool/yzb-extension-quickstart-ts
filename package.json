@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/jest": "^27.5.1",
     "@types/node": "^17.0.33",
-    "@yuanzhibang/extension-debugger": "^0.0.20",
+    "@yuanzhibang/extension-debugger": "^0.0.22",
     "ts-jest": "^28.0.2",
     "ts-lint": "^4.5.1",
     "ts-node": "^10.7.0",
