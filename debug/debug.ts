@@ -3,15 +3,17 @@ import { extensionDebugger, DebuggerLogger } from '@yuanzhibang/extension-debugg
 DebuggerLogger.withLog = true;
 // 启动调试网络服务，端口号为8080
 extensionDebugger.startServer(8080);
-// !启动开发的拓展,调试状态下,tsc会预编译到.tmp目录下,生产环境下,本文不用打包
+// !启动开发的拓展,调试状态下支持ts,js文件
 extensionDebugger.runExtension('./src/index.ts');
 
 // 手动发送topic消息
 extensionDebugger.sendPromise('test-node-process-messsage-topic', { k1: 'v1' })
     .then((result) => {
+        // 拓展进程发来的结果回调
         console.log(result);
     })
     .catch((error) => {
+        // 拓展进程发来的错误回调
         console.log(error);
     })
     .finally(() => {
