@@ -9,9 +9,11 @@ extensionDebugger.runExtension('./src/index.ts');
 // 手动发送topic消息
 extensionDebugger.sendPromise('test-node-process-messsage-topic', { k1: 'v1' })
     .then((result) => {
+        // 拓展进程发来的结果回调
         console.log(result);
     })
     .catch((error) => {
+        // 拓展进程发来的错误回调
         console.log(error);
     })
     .finally(() => {
