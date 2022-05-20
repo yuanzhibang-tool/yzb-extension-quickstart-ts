@@ -14,7 +14,7 @@
   "author": "yuanzhibang.com",
   "license": "MIT",
   "dependencies": {
-    "@yuanzhibang/node": "^0.0.28"
+    "@yuanzhibang/node": "^0.0.29"
   },
   "devDependencies": {
     "@types/jest": "^27.5.1",
