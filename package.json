@@ -7,7 +7,7 @@
     "test": "jest --runInBand --env=node --colors --coverage test",
     "tsc": "tsc",
     "create-tag": "node ./script/create-tag.js",
-    "preextension-package": "npm run create-tag",
+    "pxreextension-package": "npm run create-tag",
     "extension-package": "node ./script/extension-package.js"
   },
   "repository": {
