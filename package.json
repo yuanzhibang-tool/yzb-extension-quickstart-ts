@@ -1,6 +1,6 @@
 {
   "name": "yzb-extension-quickstart-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "猿之棒拓展开发演示,本仓库为ts语言",
   "main": "index.js",
   "scripts": {
