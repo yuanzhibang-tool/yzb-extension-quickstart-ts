@@ -7,7 +7,7 @@ extensionDebugger.startServer(8080);
 extensionDebugger.runExtension('./src/index.ts');
 
 // 手动发送topic消息
-extensionDebugger.sendPromise('test-node-process-messsage-topic', { k1: 'v1' })
+extensionDebugger.sendPromise('test-node-message-topic', { k1: 'v1' })
     .then((result) => {
         // 拓展进程发来的结果回调
         console.log(result);
@@ -31,3 +31,7 @@ extensionDebugger.setRendererOtherMessageCallback((message) => {
     console.log(message);
 });
 
+// !与前端联合调试请将上方代码注释,启动ws调试服务
+
+// extensionDebugger.startWsServer(8889);
+// extensionDebugger.setExtensionPath("./src/index.ts");
